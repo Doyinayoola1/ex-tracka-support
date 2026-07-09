@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ex-Tracka Support</title>
+<style>
+  :root {
+    --accent: #34a853;
+    --text: #1c1c1e;
+    --muted: #6b6b70;
+    --bg: #ffffff;
+    --card: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #f5f5f7;
+      --muted: #9a9a9e;
+      --bg: #0f0f10;
+      --card: #1c1c1e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+  .logo-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  .tagline {
+    color: var(--muted);
+    margin: 0 0 40px;
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 19px;
+    margin: 40px 0 12px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 12px;
+  }
+  .card h3 {
+    font-size: 15px;
+    margin: 0 0 6px;
+  }
+  .card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14.5px;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .contact-box {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 24px;
+    text-align: center;
+  }
+  .contact-box p { margin: 0 0 14px; color: var(--muted); }
+  .contact-box a.button {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  footer {
+    margin-top: 56px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo-dot"></div>
+      <h1>Ex-Tracka Support</h1>
+    </header>
+    <p class="tagline">Track spending, budgets, loans and recurring bills across accounts and currencies — 100% private, all on your device.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="card">
+      <h3>Is my data private?</h3>
+      <p>Yes. All your transactions, accounts, and budgets are stored locally on your device — there's no account, no sign-up, and no server. Nothing leaves your phone unless you explicitly enable a cloud AI provider for receipt scanning in Settings.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do recurring transactions work?</h3>
+      <p>In Settings → Transactions, choose Auto-Create (due transactions are added automatically) or Manually Confirm (you'll get a notification and a Pay Today button to confirm each one yourself).</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I back up my data?</h3>
+      <p>Go to Settings → Backup &amp; Reset to create an encrypted backup to your personal iCloud Drive or local files, and to restore from a previous backup. You can also enable automatic backups.</p>
+    </div>
+
+    <div class="card">
+      <h3>Can I use multiple currencies?</h3>
+      <p>Yes. Every account can have its own currency, exchange rates sync automatically, and your dashboard shows a converted net worth in your chosen default currency.</p>
+    </div>
+
+    <div class="card">
+      <h3>How does receipt scanning work?</h3>
+      <p>Enable AI Parsing in Settings to scan receipts and auto-fill transaction details using an on-device model by default. You can optionally switch to a cloud provider (Google, OpenAI, Anthropic, or a custom endpoint) if you provide your own API key.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I secure the app?</h3>
+      <p>Settings → Security lets you set a PIN and enable Face ID / Touch ID. This is handled entirely by iOS — Ex-Tracka never has access to your biometric data.</p>
+    </div>
+
+    <h2>Still need help?</h2>
+    <div class="contact-box">
+      <p>Email us and we'll get back to you as soon as we can.</p>
+      <a class="button" href="mailto:doyinayoola1@gmail.com?subject=Ex-Tracka%20Support">Contact Support</a>
+    </div>
+
+    <footer>
+      Ex-Tracka · Privacy Policy is available in-app under Settings → App Settings → Privacy Policy
+    </footer>
+  </div>
+</body>
+</html>
